@@ -1,1 +1,95 @@
-<p>creditcard works!</p>
+<nav class="navbar navbar-light bg-dark ">
+    <a class="navbar-brand  " href="#" style="color:rgb(85, 98, 237);"><b>&#169; HAFC Bank Pvt.Ltd </b></a>
+    <span class="quote text-light">Giving you freedom...</span>
+</nav>
+
+
+
+<div class="container col-md-12 mt-0">
+    <div class="d-flex justify-content-center h-100">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="text-center">Credit Card</h3>
+
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" [(ngModel)]="FirstName" name="fname" placeholder="Enter First Name"
+                            id="credit_fname" required>
+                    </div>
+
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" [(ngModel)]="LastName" name="lname" placeholder="Enter Last Name"
+                            id="credit_lname" required>
+
+                    </div>
+
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-caret-right"></i></span>
+                        </div>
+                        <input type="text" class="form-control" name="age" [(ngModel)]="Age" placeholder="Enter age" id="age" required>
+                        
+                    </div>
+                    
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-address-card"></i></span>
+                        </div>
+                        <input type="text" class="form-control" name="pan"
+                            placeholder="Enter the PAN card number" [(ngModel)]="PANCard" id="pan" required>
+                    </div>
+
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-credit-card"></i></span>
+                        </div>
+                        <input type="text" class="form-control" name="accno" [(ngModel)]="AccountNumber" placeholder="Enter the account number"
+                            id="accno" required>
+                    </div>
+
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-address-card"></i></span>
+                        </div>
+                        <input type="text" class="form-control" [(ngModel)]="AAdhar" name="aadhar" placeholder="Enter Aadhar number" id="aadhar" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" (click)="creditcardfun()" value="Apply" class="btn float-right login_btn " style="width:50%" >
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<table class="table table-dark">
+    <thead>
+        <tr class="table-active">
+            <th scope="row">First Name</th>
+            <th scope="row">Last Name</th>
+            <th scope="row">Age</th>
+            <th scope="row">PAN Card</th>
+            <th scope="row">Account Number</th>
+            <th scope="row">Aadhar Number</th>
+          </tr>
+    </thead>
+    <tbody>
+      <tr class="" *ngFor="let data of dummyarray">
+        <td  class="">{{data.FirstName}}</td>
+        <td  class="">{{data.LastName}}</td>
+        <td  class="table-active">{{data.Age}}</td>
+        <td  class="table-active">{{data.PANCard}}</td>
+        <td  class="table-active">{{data.AccountNumber}}</td>
+        <td  class="table-active">{{data.AAdhar}}</td>
+      </tr>
+    </tbody>
+  </table>
