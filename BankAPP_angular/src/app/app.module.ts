@@ -12,6 +12,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DeleteComponent } from './delete/delete.component';
 import { CreditcardComponent } from './creditcard/creditcard.component';
+import { TransactionsComponent } from './transactions/transactions.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { CreditcardComponent } from './creditcard/creditcard.component';
     NavbarComponent,
     DeleteComponent,
     CreditcardComponent,
+    TransactionsComponent,
   ],
   imports: [
     BrowserModule,
