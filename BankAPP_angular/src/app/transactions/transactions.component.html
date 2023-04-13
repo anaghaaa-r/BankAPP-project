@@ -1,1 +1,26 @@
-<p>transactions works!</p>
+<app-navbar></app-navbar>
+
+<p  class="text-light ms-4 mt-4">Time : {{datenew|date:"short"}}</p>
+
+<table class="table  table-success">
+    <thead>
+        <tr>
+            <th scope="col">Amount</th>
+            <th scope="col">Mode</th>
+            <th scope="col">Type</th>
+            <th scope="col">Time</th>
+            <th scope="col">Balance</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let data of transaction">
+            <td>{{data.Amount}}</td>
+            <td>{{data.Mode}}</td>
+            <td>{{data.Type}}</td>
+            <td>{{data.Time | date: 'short'}}</td>
+            <!-- pipe method -->
+            <td>{{data.Balance}}</td>
+        </tr>
+    </tbody>
+</table>
