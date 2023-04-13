@@ -1,0 +1,8 @@
+.card{
+    height: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,0.7) !important;
+    color: white
+    }

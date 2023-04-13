@@ -1,0 +1,10 @@
+<div class="d1" *ngIf="item">
+    <div class="card">
+        <div class="card-body">
+          <p>Are you sure to delete this account ?</p>
+          <p>Account Number: {{item}}</p>
+        
+<button class="btn btn warning" (click)="delete()" style="margin-right:5px;"> Yes</button>
+<button class="btn btn warning" (click)="cancel()"> No</button>
+</div>
+</div>
