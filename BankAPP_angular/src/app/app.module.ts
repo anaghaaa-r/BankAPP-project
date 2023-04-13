@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DeleteComponent } from './delete/delete.component';
+import { CreditcardComponent } from './creditcard/creditcard.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { DeleteComponent } from './delete/delete.component';
     DashboardComponent,
     NavbarComponent,
     DeleteComponent,
+    CreditcardComponent,
   ],
   imports: [
     BrowserModule,
