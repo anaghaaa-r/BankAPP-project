@@ -17,4 +17,4 @@ const User=mongoose.model('User',{
     transaction: Array
 })
 
-module.exports={User}
+module.exports = { User }
