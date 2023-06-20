@@ -98,6 +98,7 @@ const deleteac = (acno) => {
             return {
                 statusCode: 203,
                 status: true,
+                message: "account deleted",
                 "acno": acno
             }
         }
