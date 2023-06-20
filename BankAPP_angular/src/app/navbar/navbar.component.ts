@@ -8,15 +8,18 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  
-  constructor(private route:Router) { }
+  username: any
+  constructor(private route:Router) { 
+    this.username = JSON.parse(localStorage.getItem("CurrentName") || '')
+  }
 
-  username=JSON.parse(localStorage.getItem("CurrentName")||'')
+  // username=JSON.parse(localStorage.getItem("CurrentName")||'')
   ngOnInit(): void {
   }
 
   logout()
   {
+    localStorage.removeItem('CurrentAccountNumber')
     this.route.navigateByUrl('')
   }
 }

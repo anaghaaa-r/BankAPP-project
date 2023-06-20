@@ -16,10 +16,10 @@
             <a class="nav-link" href="creditcard">Credit Card</a>
           </li>
         </ul>
-        <form class="d-flex ml-auto" role="search">
+        <form class="d-flex ml-auto" (ngSubmit)="logout()">
           <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" style="margin-left: 5px; margin-right: 5px;" type="submit">Search</button> -->
-          <button class="btn btn-success  pe-4" type="submit" (click)="logout()" >Logout </button>
+          <button class="btn btn-success  pe-4" type="submit">Logout</button>
         </form>
       </div>
     </div>
